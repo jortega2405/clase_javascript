@@ -17,7 +17,7 @@ alert('Mundo');
 
 alert('Hola')
 alert('Mundo')
-*/
+
 
 // insercion automatica de punto y coma
 
@@ -55,7 +55,7 @@ let _ = 2;
 // No puede nombrar variables
 
 /*let 1a = 3;
-let primer-nombre = 4; */
+let primer-nombre = 4; 
 
 "use strict"
 mensaje2 = "Hola Mundo";
@@ -161,4 +161,75 @@ console.log(typeof(null));//object - ERROR JAVASCRIPT
 console.log(typeof(Math));//object
 
 
+//Interacciones: alert, prompt, confirm
 
+//alert : es una ventana modal
+//alert("Hola Mundo");
+
+//prompt
+/*
+let nomb = prompt('Digite Nombre',)
+alert(nomb)
+prompt('Digite Nombre', ' ')//Este caso es solo para Internet Explorer
+
+*/
+
+//confirm
+
+//let esHelado = confirm('Te Gusta el Helado?')
+//console.log(esHelado); //true si presionan ok y false si presionan cancelar
+
+//Conversion de tipos
+
+//Existen dos tipos de conversiones: explicita e implicita
+
+//ToString
+//let valor = true;
+//console.log(typeof valor);
+
+
+//valor = String(valor); //true
+valor = String(false); //flase
+valor = String(null); //null
+valor = String(undefined); //undefined
+console.log(valor);
+console.log(typeof valor);
+
+//Convertir a numero
+
+//Conersiones numericas ocurren automaticamente en funciones matematicas y expresiones
+//alert( '6' / '2'); //3
+//alert( '1' + 2);
+
+let cadena = "123"
+let num_cad = Number(cadena); //123
+
+//console.log(Number('Hola')); //NaN
+
+/* 
+undefined -> NaN
+null -> 0
+true -> 1
+false -> 0
+String ''-> 0
+string 'hola' -> NaN
+*/
+
+
+//Convertir a Boolean
+
+console.log(Boolean("Hola"));
+/* 
+undefined -> false
+null -> false
+String ''-> false 
+NaN -> false
+0 -> false
+
+'0' -> true
+'  ' -> true
+
+*/
+
+console.log(Boolean(String(0)))
+console.log(Boolean(0))
